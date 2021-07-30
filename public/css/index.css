@@ -134,6 +134,18 @@ main article:hover a:hover{
 	text-decoration: none;
 }
 
+/*modal*/
+
+#modal{
+	display: none;
+	position: fixed;
+	top:0;
+	left:0;
+	width: 1px;
+	height: 1px;
+}
+
+
 @media (max-width:750px){
 	main {
 		grid-template-columns: repeat(2,1fr);

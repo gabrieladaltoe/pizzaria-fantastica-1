@@ -5,9 +5,9 @@ Para fazer com que as pizzas da home apareçam de forma dinâmica:
 
 Para fazer o link "Ver Mais" funcionar:
     ✔ Fazer com que o link "ver mais" aponte para a rota /pizzas/_id_da_pizza_ @done(21-07-28 21:17)
-    ☐ Criar em PizzasRouter uma rota GET para "/pizzas/:id"
-    ☐ Direcionar a requisição que chegue a essa rota para PizzasController.show
-    ☐ Criar o controller PizzasController.show
+    ✔ Criar em PizzasRouter uma rota GET para "/pizzas/:id" @done(21-07-29 20:23)
+    ✔ Direcionar a requisição que chegue a essa rota para PizzasController.show @done(21-07-29 20:23)
+    ✔ Criar o controller PizzasController.show @done(21-07-29 20:23)
         Esse controller deve
         . Identificar o id da pizza requisitada
         . Carregar a informação da pizza requisitada

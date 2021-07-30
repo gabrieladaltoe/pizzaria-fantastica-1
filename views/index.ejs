@@ -15,7 +15,7 @@
 	</form>
 	<main>
 
-	<%for(let pizza of pizzas) {%>
+	<% for(let pizza of pizzas) {%>
 		<article>
 			<img src="<%= pizza.img %>" alt="<%= pizza.nome %>">
 			<a href="/pizzas/<%= pizza.id%>">Ver Mais</a>
@@ -23,7 +23,7 @@
 			<div><%= pizza.nome %></div>
 			<span><%= pizza.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});%></span>
 		</article>
-	<%}%>
+	<% } %>
 	</main>
 </body>
 </html>
