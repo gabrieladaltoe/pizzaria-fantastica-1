@@ -37,10 +37,28 @@ module.exports = {
 
 
 		res.render("pizza", {pizza, proximo, voltar})
+	},
+
+	search: (req, res) => {
+
+		let busca = req.query.busca;
+
+		console.log(busca)
+
+		//GUARDAR BUSCA
+
+		//busca.incluedes("cala") ou
+		//pizza.incluedes("cala")
+
+		let encontradas = pizzas.filter(p => p.nome == busca)
+
+
+		res.render("index", {pizzas:encontradas})
+		
+		//REPRESENTAR NUM ARRAY "encontradas" SOMENTE PIZZAS encontradas Q CONTENHAM A STRING BUSCADA
+
+		//retornar a view com as pizzas encontradas
+		
 	}
 
-	/*
-	search: (req,res)=>{
-		
-	}*/
 }
