@@ -59,6 +59,31 @@ module.exports = {
 
 		//retornar a view com as pizzas encontradas
 		
+	},
+	create: (req, res) => {
+		res.render("pizza-create")
+	},
+	store: (req, res) => {
+		let novaPizza = {
+			id:`${pizzas[pizzas.length - 1].id} + 1`,
+			nome: req.body.nome,
+			igredientes: req.body.ingredientes.split(","),
+			preco: req.body.preco,
+			img: "/img/calabresa.jpg",
+			destaque: true
+		}
+
+		pizzas.push(novaPizza)
+
+		res.render("index", {pizzas})
+	
+		/*
+		File System
+
+		const fs = require('fs');
+
+		*/ 
+
 	}
 
 }
